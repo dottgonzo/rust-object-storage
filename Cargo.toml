@@ -1,0 +1,21 @@
+[package]
+name = "rust-object-storage"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["Dario Caruso"]
+description = "rust-object-storage api"
+license = "Apache-2.0"
+documentation = "https://docs.rs/rust-object-storage"
+repository = "https://github.com/dottgonzo/rust-object-storage"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+url = { version = "2.4.1", default-features = false }
+
+simplerusthttpsclient =  { version = "0.1.17", features = ["tls"], default-features = false}
+tokio = { version = "1.33.0", default-features = false, features = ["macros"] }
+reqwest = { version = "0.11.22", default-features = false, features = ["json","multipart"] }
