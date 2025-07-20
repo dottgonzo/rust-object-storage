@@ -1,5 +1,5 @@
 use url::Url;
-use reqwest::header::HeaderMap;
+use http::header::HeaderMap;
 
 #[cfg(test)]
 mod tests;
